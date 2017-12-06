@@ -61,6 +61,18 @@ $.ajax({
 
         title.html("<h3>" + headline + "<h3>");
 
+        /////////////// BY //////////////
+
+        // Make a BY row
+        let byRow = $("<div>");
+
+        // Assign it a class 
+        byRow.addClass("by-txt");
+
+        // Set by text
+
+        title.html("<p>" + by + "<p>");
+
         ///////////// ASSEMBLY /////////////
 
         // Put title in panel
