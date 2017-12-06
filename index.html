@@ -37,18 +37,17 @@ Our project repo https://github.com/lyonx/Group-Work-0
 <body>
     <div class="container">
         <div class="wrapper">
-            <div class="jumbotron">
-                <h2>New York Times Search</h2>
-            </div>
+        <div class="jumbotron">
+            <h2>New York Times Search</h2>
         </div>
-        <br>
+        </div><br>
         <div class="wrapper">
             <form>
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="#">
-                                <img alt="Search Parameters">
+                                <img alt="Search Parameters" src="">
                             </a>
                         </div>
                     </div>
@@ -70,8 +69,8 @@ Our project repo https://github.com/lyonx/Group-Work-0
                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
                 </div>
             </form>
-            <a class="btn btn-default Btn1" href="#" role="button">Search</a>
-            <button class="btn btn-default btn2" type="submit">Clear Results</button>
+            <a class="btn btn-default searchbtn" onclick="clickSearch ()" href="#" role="button">Search</a>
+            <button class="btn btn-default clearbtn" onclick="clickClear ()" >Clear Results</button>
 
         </div>
         <br>
@@ -94,6 +93,17 @@ Our project repo https://github.com/lyonx/Group-Work-0
 
         </div>
     </div>
+    <script>
+            function clickSearch () {
+                document.getElementsByClassName("btn btn-default searchbtn");
+                console.log("test search");
+            }
+
+            function clickClear () {
+                document.getElementsByClassName("btn btn-default clearbtn");
+                console.log("test clear");
+            } 
+        </script>
 </body>
 
 </html>

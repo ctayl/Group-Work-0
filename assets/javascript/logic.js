@@ -71,18 +71,35 @@ $.ajax({
 
         // Set by text
 
-        title.html("<p>" + by + "<p>");
+        byRow.html("<p>" + by + "<p>");
 
         ///////////// ASSEMBLY /////////////
 
+        /////////////// SNIP //////////////
+
+        // Make a SNIP row
+        let snipTxt = $("<div>");
+
+        // Assign it a class 
+        snipTxt.addClass("snip");
+
+        // Set by text
+
+        snipTxt.html("<p>" + snip + "<p>");
+
+        
         // Put title in panel
         pan.append(title);
+
+        pan.append(snip);
+
+
 
         // Insert panel into div
         div.append(pan);
 
         // Insert div into img-row
-        $("body").append(div);
+        $(".articles").append(div);
     }
     console.log("done");
 }).fail(function (err) {
